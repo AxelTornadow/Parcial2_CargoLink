@@ -16,4 +16,12 @@ public class Client {
     private String adress;
     private String email;
     private ArrayList<Shipping> shippings;
+
+    public Client(int id, String name, String adress, String email) {
+        this.id = id;
+        this.name = name;
+        this.adress = adress;
+        this.email = email;
+    }
+    
 }

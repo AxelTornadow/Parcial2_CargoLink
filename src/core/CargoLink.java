@@ -4,10 +4,24 @@
  */
 package core;
 
+import java.util.ArrayList;
+
 /**
  *
  * @author atornay
  */
 public class CargoLink {
+    
+    private ArrayList<Cliente> clientes;
+    private ArrayList<LogisticsCenter> centers;
+    private ArrayList<Vehicle> vehiculos;
+
+    public CargoLink() {
+        this.clientes = new ArrayList<>();
+        this.centers = new ArrayList<>();
+        this.vehiculos = new ArrayList<>();
+    }
+    
+    
     
 }

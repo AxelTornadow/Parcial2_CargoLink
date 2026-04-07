@@ -10,8 +10,4 @@ package core;
  */
 public class Package {
     
-    private float weight;
-    private float value;
-    private Content type;
-    
 }
