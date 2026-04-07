@@ -24,12 +24,11 @@ public class CargoLink {
         this.vehicles = new ArrayList<>();
     }
     
-    public void addClient(int id, String name, String adress, String email) {
-        Client client = new Client(id, name, adress, email);
+    public void addClient(Client client) {
         clients.add(client);
     }
     
-    public void addLogisticsCenter(String name, String city, String country, float latitude, float longitude) {
+    public void addLogisticsCenter(String name, String city, String country, double latitude, double longitude) {
         LogisticsCenter center = new LogisticsCenter(name, city, country, latitude, longitude);
         centers.add(center);
     }

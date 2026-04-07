@@ -1,10 +1,13 @@
+import core.CargoLink;
 import core.Client;
+import core.Content;
+import core.Status;
 import core.vehicle.Plane;
 import core.vehicle.Ship;
 import core.vehicle.Truck;
 import java.time.LocalDate;
 
-public class MainParcial2038 {
+public class Main {
     
     public static void main(String[] args) {
         // Create CargoLink
