@@ -47,6 +47,7 @@ public class CargoLink {
     }
     
     public void packageSummary() {
+        System.out.println("Package summary:");
         
     }
     
