@@ -4,10 +4,22 @@
  */
 package core;
 
+import java.util.ArrayList;
+import java.util.Date;
+
 /**
  *
  * @author atornay
  */
 public class Shipping {
     
+    private int code;
+    private Client client;
+    private LogisticsCenter originCenter;
+    private LogisticsCenter destinationCenter;
+    private Date registrationDate;
+    private Date deliveryDate;
+    private Status status;
+    private ArrayList<package> packages;
+    private Vehicle vehicle;
 }
