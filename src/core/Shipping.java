@@ -14,7 +14,7 @@ import java.util.Date;
  */
 public class Shipping {
     
-    private int code;
+    private String code;
     private Client client;
     private LogisticsCenter originCenter;
     private LogisticsCenter destinationCenter;
@@ -36,5 +36,13 @@ public class Shipping {
         this.vehicle = vehicle;
     }
     
+    public void addPackage(double weight, Content type, double value) {
+        Package pack = new Package(weight, type, value);
+        packages.add(pack);
+    }
+    
+    public String getCode() {
+        return this.code;
+    }
     
 }

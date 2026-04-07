@@ -34,4 +34,13 @@ public class Client {
         Shipping shipping = new Shipping(code, client, originCenter, destinationCenter, registrationDate, deliveryDate, status, vehicle);
         shippings.add(shipping);
     }
+    
+    public Shipping getShipping(String id) {
+        for (Shipping shipping : shippings) {
+            if (shipping.getCode().equals(id)) {
+                return shipping;
+            }
+        }
+        return null;
+    }
 }
