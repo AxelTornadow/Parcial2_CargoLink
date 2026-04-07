@@ -4,6 +4,8 @@
  */
 package core;
 
+import core.vehicle.Plane;
+import core.vehicle.Ship;
 import core.vehicle.Truck;
 import core.vehicle.Vehicle;
 import java.util.ArrayList;
@@ -37,6 +39,14 @@ public class CargoLink {
         vehicles.add(truck);
     }
     
+    public void addVehicle(Ship ship) {
+        vehicles.add(ship);
+    }
+    
+    public void addVehicle(Plane plane) {
+        vehicles.add(plane);
+    }
+    
     public Client getClient(int id) {
         for (Client client : clients) {
             if (client.getId() == id) {
@@ -44,6 +54,14 @@ public class CargoLink {
             }
         }
         return null;
+    }
+    
+    public Vehicle getVehicle(int index){
+        return vehicles.get(index);
+    }
+    
+    public LogisticsCenter getLogisticsCenter(int index){
+        return centers.get(index);
     }
     
    

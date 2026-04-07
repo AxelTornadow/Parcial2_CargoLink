@@ -5,6 +5,7 @@
 package core;
 
 import core.vehicle.Vehicle;
+import java.time.LocalDate;
 import java.util.ArrayList;
 import java.util.Date;
 
@@ -14,19 +15,18 @@ import java.util.Date;
  */
 public class Shipping {
     
-    private int code;
+    private String code;
     private Client client;
     private LogisticsCenter originCenter;
     private LogisticsCenter destinationCenter;
-    private Date registrationDate;
-    private Date deliveryDate;
+    private LocalDate registrationDate;
+    private LocalDate deliveryDate;
     private Status status;
     private ArrayList<Package> packages;
     private Vehicle vehicle;
 
-    public Shipping(int code, Client client, LogisticsCenter originCenter, LogisticsCenter destinationCenter, Date registrationDate, Date deliveryDate, Status status, Vehicle vehicle) {
+    public Shipping(String code, LogisticsCenter originCenter, LogisticsCenter destinationCenter, LocalDate registrationDate, LocalDate deliveryDate, Status status, Vehicle vehicle) {
         this.code = code;
-        this.client = client;
         this.originCenter = originCenter;
         this.destinationCenter = destinationCenter;
         this.registrationDate = registrationDate;
@@ -35,6 +35,12 @@ public class Shipping {
         this.packages = new ArrayList<>();
         this.vehicle = vehicle;
     }
+
+    public String getCode() {
+        return code;
+    }
+    
+    
     
     
 }

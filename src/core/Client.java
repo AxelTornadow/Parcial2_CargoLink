@@ -5,8 +5,8 @@
 package core;
 
 import core.vehicle.Vehicle;
+import java.time.LocalDate;
 import java.util.ArrayList;
-import java.util.Date;
 
 /**
  *
@@ -30,8 +30,15 @@ public class Client {
         return this.id;
     }
     
-    public void makeShipping(int code, Client client, LogisticsCenter originCenter, LogisticsCenter destinationCenter, Date registrationDate, Date deliveryDate, Status status, Vehicle vehicle) {
-        Shipping shipping = new Shipping(code, client, originCenter, destinationCenter, registrationDate, deliveryDate, status, vehicle);
+    public Shipping getShipping(String code) {
+        for(Shipping shipping : shippings){
+            if(shipping.getCode().equals(code)) return shipping;
+        }
+        return null;
+    }
+    
+    public void makeShipping(String code, LogisticsCenter v2, LogisticsCenter originCenter, LocalDate registrationDate, LocalDate deliveryDate, Status status, Vehicle vehicle) {
+        Shipping shipping = new Shipping(code, v2, originCenter, registrationDate, deliveryDate, status, vehicle);
         shippings.add(shipping);
     }
 }

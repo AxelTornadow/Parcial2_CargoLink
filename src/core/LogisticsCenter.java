@@ -15,8 +15,8 @@ public class LogisticsCenter {
     private String name;
     private String city;
     private String country;
-    private float latitude;
-    private float longitude;
+    private double latitude;
+    private double longitude;
     private ArrayList<Shipping> shippings;
 
     public LogisticsCenter(String name, String city, String country, double latitude, double longitude) {
