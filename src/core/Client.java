@@ -4,7 +4,9 @@
  */
 package core;
 
+import core.vehicle.Vehicle;
 import java.util.ArrayList;
+import java.util.Date;
 
 /**
  *
@@ -26,5 +28,10 @@ public class Client {
     
     public int getId() {
         return this.id;
+    }
+    
+    public void makeShipping(int code, Client client, LogisticsCenter originCenter, LogisticsCenter destinationCenter, Date registrationDate, Date deliveryDate, Status status, Vehicle vehicle) {
+        Shipping shipping = new Shipping(code, client, originCenter, destinationCenter, registrationDate, deliveryDate, status, vehicle);
+        shippings.add(shipping);
     }
 }

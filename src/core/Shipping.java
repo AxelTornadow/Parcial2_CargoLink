@@ -23,4 +23,18 @@ public class Shipping {
     private Status status;
     private ArrayList<Package> packages;
     private Vehicle vehicle;
+
+    public Shipping(int code, Client client, LogisticsCenter originCenter, LogisticsCenter destinationCenter, Date registrationDate, Date deliveryDate, Status status, Vehicle vehicle) {
+        this.code = code;
+        this.client = client;
+        this.originCenter = originCenter;
+        this.destinationCenter = destinationCenter;
+        this.registrationDate = registrationDate;
+        this.deliveryDate = deliveryDate;
+        this.status = status;
+        this.packages = new ArrayList<>();
+        this.vehicle = vehicle;
+    }
+    
+    
 }
