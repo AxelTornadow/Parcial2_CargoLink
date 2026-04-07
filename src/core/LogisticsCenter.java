@@ -19,7 +19,7 @@ public class LogisticsCenter {
     private float longitude;
     private ArrayList<Shipping> shippings;
 
-    public LogisticsCenter(String name, String city, String country, float latitude, float longitude) {
+    public LogisticsCenter(String name, String city, String country, double latitude, double longitude) {
         this.name = name;
         this.city = city;
         this.country = country;

@@ -4,6 +4,7 @@
  */
 package core;
 
+import core.vehicle.Truck;
 import core.vehicle.Vehicle;
 import java.util.ArrayList;
 
@@ -15,26 +16,25 @@ public class CargoLink {
     
     private ArrayList<Client> clients;
     private ArrayList<LogisticsCenter> centers;
-    private ArrayList<Vehicle> vehiculos;
+    private ArrayList<Vehicle> vehicles;
 
     public CargoLink() {
         this.clients = new ArrayList<>();
         this.centers = new ArrayList<>();
-        this.vehiculos = new ArrayList<>();
+        this.vehicles = new ArrayList<>();
     }
     
-    public void addClient(int id, String name, String adress, String email) {
-        Client client = new Client(id, name, adress, email);
-        clientes.add(client);
+    public void addClient(Client client) {
+        clients.add(client);
     }
     
-    public void addLogisticsCenter(String name, String city, String country, float latitude, float longitude) {
+    public void addLogisticsCenter(String name, String city, String country, double latitude, double longitude) {
         LogisticsCenter center = new LogisticsCenter(name, city, country, latitude, longitude);
         centers.add(center);
     }
     
-    public void addVehicle(double cargoCapacity, String CodeNameLicense) {
-        
+    public void addVehicle(Truck truck) {
+        vehicles.add(truck);
     }
     
     public Client getClient(int id) {
@@ -44,5 +44,13 @@ public class CargoLink {
             }
         }
         return null;
+    }
+    
+    public void packageSummary() {
+        
+    }
+    
+    public void vehicleSummary() {
+        
     }
 }
