@@ -9,7 +9,7 @@ import core.vehicle.Vehicle;
 import java.util.ArrayList;
 
 /**
- *
+ *s
  * @author atornay
  */
 public class CargoLink {
