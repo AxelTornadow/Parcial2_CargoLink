@@ -14,4 +14,10 @@ import java.util.ArrayList;
 public abstract class Vehicle {
     protected double cargoCapacity;
     protected ArrayList<Shipping> shipping; 
+
+    public Vehicle(double cargoCapacity) {
+        this.cargoCapacity = cargoCapacity;
+        this.shipping = new ArrayList();
+    }
+    
 }

@@ -10,4 +10,9 @@ package core.vehicle;
  */
 public class Plane extends Vehicle{
     private String code;
+
+    public Plane(double cargoCapacity, String code) {
+        super(cargoCapacity);
+        this.code = code;
+    }
 }

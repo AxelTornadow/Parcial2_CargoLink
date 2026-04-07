@@ -46,12 +46,5 @@ public class CargoLink {
         return null;
     }
     
-    public void packageSummary() {
-        System.out.println("Package summary:");
-        
-    }
-    
-    public void vehicleSummary() {
-        
-    }
+   
 }
