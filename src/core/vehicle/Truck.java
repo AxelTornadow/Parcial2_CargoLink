@@ -15,4 +15,6 @@ public class Truck extends Vehicle{
         super(cargoCapacity);
         this.licensePlate = licensePlate;
     }
+    
+    
 }
