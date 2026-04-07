@@ -4,6 +4,7 @@
  */
 package core;
 
+import core.vehicle.Vehicle;
 import java.util.ArrayList;
 import java.util.Date;
 
@@ -20,6 +21,6 @@ public class Shipping {
     private Date registrationDate;
     private Date deliveryDate;
     private Status status;
-    private ArrayList<package> packages;
+    private ArrayList<Package> packages;
     private Vehicle vehicle;
 }

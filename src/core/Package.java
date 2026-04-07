@@ -9,5 +9,14 @@ package core;
  * @author atornay
  */
 public class Package {
+    private double weight;
+    private Content type;
+    private double value;
+
+    public Package(double weight, Content type, double value) {
+        this.weight = weight;
+        this.type = type;
+        this.value = value;
+    }
     
 }
