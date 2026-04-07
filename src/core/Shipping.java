@@ -10,4 +10,13 @@ package core;
  */
 public class Shipping {
     
+    private int code;
+    private Client client;
+    private LogisticsCenter originCenter;
+    private LogisticsCenter destinationCenter;
+    private Date registrationDate;
+    private Date registrationDate;
+    private Status status;
+    private ArrayList<package> packages;
+    private Vehicle vehicle;
 }

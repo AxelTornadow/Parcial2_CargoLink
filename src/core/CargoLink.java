@@ -4,18 +4,10 @@
  */
 package core;
 
-import java.util.ArrayList;
-
 /**
  *
  * @author atornay
  */
-public class LogisticsCenter {
+public class CargoLink {
     
-    private String name;
-    private String city;
-    private String country;
-    private float latitude;
-    private float longitude;
-    private ArrayList<Shipping> shippings;
 }

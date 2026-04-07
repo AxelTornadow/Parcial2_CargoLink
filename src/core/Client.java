@@ -4,10 +4,16 @@
  */
 package core;
 
+import java.util.ArrayList;
+
 /**
  *
  * @author atornay
  */
 public class Client {
-    ssss
+    private int id;
+    private String name;
+    private String adress;
+    private String email;
+    private ArrayList<Shipping> shippings;
 }

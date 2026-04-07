@@ -9,5 +9,7 @@ package core;
  * @author atornay
  */
 public enum Status {
-    
+    IN_TRANSIT,
+    DELIVERED,
+    CANCELED;
 }
