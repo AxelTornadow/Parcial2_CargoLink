@@ -43,4 +43,8 @@ public class Client {
         }
         return null;
     }
+    
+    public ArrayList<Shipping> getShippings() {
+        return shippings;
+    }
 }

@@ -54,13 +54,16 @@ public class CargoLink {
         numPack = 0;
         System.out.println("- TRUCK");
         for (Client client : clients) {
-            for (Shipping shipping : shippings) {
+            for (Shipping shipping : client.getShippings()) {
+                numShip++;
                 for (Vehicle vehicle : vehicles) {
                     if (vehicle instanceof Truck) {
                         quantity++;
                     }
                 }
-                
+                for (Package package : shipping.getPackages()) {
+                numPack++;
+                }
             }
         }
 

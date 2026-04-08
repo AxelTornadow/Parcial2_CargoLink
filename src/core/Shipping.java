@@ -45,4 +45,8 @@ public class Shipping {
         return this.code;
     }
     
+    public ArrayList<Package> getPackages() {
+        return packages;
+    }
+    
 }
